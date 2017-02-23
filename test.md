@@ -19,7 +19,6 @@
 	
 	d = {1: 2, 3: 4}
 	
-	print
 	def func1(arg):
 		print arg, type(arg)	
 	func1(d)
