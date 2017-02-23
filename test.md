@@ -13,12 +13,12 @@
   
   ответ:
   ```
-  d = {1: 2, 3: 4}
-  
-  print
-  def func1(arg):
-      print arg, type(arg)
-      print type(arg)
+ d = {1: 2, 3: 4}
+
+print
+def func1(arg):
+	print arg, type(arg)
+	print type(arg)
 
 func1(d)
 
