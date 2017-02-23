@@ -13,32 +13,11 @@
   
   ответ:
  ```
-d = {1: 2, 3: 4}
+1. <type 'dict'>
+2. <type 'tuple'>
+3. <type 'dict'> тип ключей <type 'str'>
 
-print
-def func1(arg):
-	print arg, type(arg)
-	print type(arg)
 
-func1(d)
-
-print
-def func2(*args):
-	print args, type(args)
-	for arg in args:
-		print type(arg)
-    
-func2(*d)
-
-print
-d = {'1': 2, '3': 4}
-
-def func3(**kwargs):
-	print kwargs, type(kwargs)
-	for key in kwargs:
-		print type(key), kwargs[key]
-
-func3(**d) 
 ```
 
 2. Значения какого типа будет содержать переменная `y` в следующем коде:
