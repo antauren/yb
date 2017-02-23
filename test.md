@@ -19,8 +19,8 @@
 
 print
 def func1(arg):
-	print arg, type(arg)
-	print type(arg)
+    print arg, type(arg)
+    print type(arg)
 
 func1(d)
 
