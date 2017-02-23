@@ -156,3 +156,59 @@ for e in g:
     * Оформите её в виде модуля.
     * Сделайте так, чтоб функция могла работать с потенциально бесконечными
       генераторами (и была бы сама генератором, соответственно).
+      
+      ```python
+      import unittest
+
+def f(s):
+
+    i = 0
+    while s[i] == '':
+        i += 1
+    else:
+        del s[:i]
+    #print(s)
+
+    i = len(s)
+    while s[i-1] == '':
+        i -= 1
+        s = s[:i]
+    #print(s)
+
+    j = len(s) - 1
+    while j != 0:
+        if s[j] == u'':
+            i = j
+            while s[i] == '':
+                s[i:j] = ''
+                j = i
+                i -= 1
+                if i == 0:
+                    break
+        j -= 1
+    #print(s)
+    return s
+
+
+class Test(unittest.TestCase):
+    def test_normal(self):
+        res = f( ["", "abc", "123", "", "x", "", "", "y", "", "" ] )
+        self.assertEqual( res, ["abc", "123", "", "x", "", "y"] )
+
+    def test_single(self):
+        res = f( [""] )
+        self.assertEqual( res, [""] )
+
+    def test_empty(self):
+        res = f( [] )
+        self.assertEqual( res, [] )
+
+
+if __name__ == '__main__':
+    unittest.main()
+      
+      
+      ```
+      
+      
+      
