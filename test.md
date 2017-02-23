@@ -162,18 +162,21 @@ import unittest
 
 def f(s):
 
+    if not s:
+        return ([])
+
     i = 0
-    while s[i] == '':
+    while s[i] == '' and len(s) > 1:
         i += 1
     else:
         del s[:i]
-    #print(s)
+    print(s)
 
     i = len(s)
-    while s[i-1] == '':
+    while s[i-1] == '' and len(s) > 1:
         i -= 1
         s = s[:i]
-    #print(s)
+    print(s)
 
     j = len(s) - 1
     while j != 0:
@@ -186,8 +189,10 @@ def f(s):
                 if i == 0:
                     break
         j -= 1
-    #print(s)
+    print(s)
     return s
+
+#print(f(['']))
 
 
 class Test(unittest.TestCase):
