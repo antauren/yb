@@ -17,6 +17,7 @@
 	#2. <type 'tuple'>
 	#3. <type 'dict'> тип ключей <type 'str'>, будет ошибка TypeError
 	
+	#проверял так:
 	d = {1: 2, 3: 4}
 	
 	def func1(arg):
