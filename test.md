@@ -30,7 +30,7 @@
 	def func2(*args):
 		print args, type(args)
 		for arg in args:
-		print type(arg)
+			print type(arg)
 	func2(*d)
 	
 	print '-----'
@@ -40,7 +40,7 @@
 	def func3(**kwargs):
 		print kwargs, type(kwargs)
 		for key in kwargs:
-		print type(key), kwargs[key]
+			print type(key), kwargs[key]
 	func3(**d)
 ```
 
