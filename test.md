@@ -21,19 +21,17 @@
 	
 	print
 	def func1(arg):
-		print arg, type(arg)
-	
+		print arg, type(arg)	
 	func1(d)
 	
-	print("----")
+	print "----"
 	def func2(*args):
 		print args, type(args)
 		for arg in args:
 			print type(arg)
 	func2(*d)
 	
-	print '-----'
-	
+	print '-----'	
 	d = {'1': 2, '3': 4}
 	
 	def func3(**kwargs):
