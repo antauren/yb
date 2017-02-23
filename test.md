@@ -20,23 +20,23 @@
 	d = {1: 2, 3: 4}
 	
 	def func1(arg):
-		print arg, type(arg)	
+		print arg, type(arg) #{1: 2, 3: 4} <type 'dict'>	
 	func1(d)
 	
 	print "----"
 	def func2(*args):
-		print args, type(args)
+		print args, type(args) #(1, 3) <type 'tuple'>
 		for arg in args:
-			print type(arg)
+			print type(arg) #<type 'int'>
 	func2(*d)
 	
 	print '-----'	
-	d = {'1': 2, '3': 4}
+	d = {'1': 2, '3': 4} #!!!!!!!
 	
 	def func3(**kwargs):
-		print kwargs, type(kwargs)
+		print kwargs, type(kwargs) #{'1': 2, '3': 4} <type 'dict'>
 		for key in kwargs:
-			print type(key), kwargs[key]
+			print type(key), kwargs[key] #<type 'str'>
 	func3(**d)
 ```
 
