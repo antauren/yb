@@ -13,9 +13,9 @@
   
   ответ:
   ```python
-1. <type 'dict'>
-2. <type 'tuple'>
-3. <type 'dict'> тип ключей <type 'str'>
+#1. <type 'dict'>
+#2. <type 'tuple'>
+#3. <type 'dict'> тип ключей <type 'str'>
 
 print
 def func1(arg):
