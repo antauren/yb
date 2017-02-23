@@ -157,8 +157,8 @@ for e in g:
     * Сделайте так, чтоб функция могла работать с потенциально бесконечными
       генераторами (и была бы сама генератором, соответственно).
       
-      ```python
-      import unittest
+```python
+import unittest
 
 def f(s):
 
@@ -206,9 +206,7 @@ class Test(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-      
-      
-      ```
+```
       
       
       
