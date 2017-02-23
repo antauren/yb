@@ -71,19 +71,18 @@
 
 4. Напишите декоратор, который печатает результат выполнения функции.
 
-ответ:
-```
-def decorator(f):
+   ответ:
+   ```python
+   def decorator(f):
     def wrapper(*argv):
         print f(*argv)
     return wrapper
     
-@decorator
-def sum(a,b):
-	return a + b
-
-sum(2,3)
-```
+    @decorator
+    def sum(a,b):
+    	return a + b
+    sum(2,3)
+    ```
 
 5. Напишите генератор, который производит чётные натуральные числа.
 
