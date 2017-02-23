@@ -38,9 +38,7 @@ def func3(**kwargs):
 	for key in kwargs:
 		print type(key), kwargs[key]
 
-func3(**d)
-
- 
+func3(**d) 
 ```
 
 2. Значения какого типа будет содержать переменная `y` в следующем коде:
