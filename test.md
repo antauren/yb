@@ -85,40 +85,34 @@
     ```
 
 5. Напишите генератор, который производит чётные натуральные числа.
-
-ответ:
-генератор выводит нат.числа от 0 до N, учитвает тот факт что в send может быть послано отриц. или вещ. число
-
-```
-def f(N):
-    current = 0
+    ответ:
+    генератор выводит нат.числа от 0 до N, учитвает тот факт что в send может быть послано отриц. или вещ. число
     
-    while current <= N:
-        reset = yield current
-
-        if reset is not None:
-            reset = int(reset)
-            if reset < 0:
-                current = -2
-
-
-            elif reset % 2 == 0:
-                current = reset - 2
-                            
-            else:
-                current = reset - 1
-        current += 2
-        
-g = f(21)
-
-print(next(g))
-print(next(g))
-print('------')
-print(g.send(-5.5))
-print(next(g))
-for e in g:
-    print(e)
-```
+    ```
+    def f(N):
+    	current = 0
+	while current <= N:
+	    reset = yield current
+	    
+	    if reset is not None:
+	    	reset = int(reset)
+		    if reset < 0:
+		        current = -2
+		    elif reset % 2 == 0:
+		        current = reset - 2
+		    else:
+		        current = reset - 1
+	    current += 2
+    g = f(21)
+    
+    print(next(g))
+    print(next(g))
+    print('------')
+    print(g.send(-5.5))
+    print(next(g))
+    for e in g:
+    	print(e)
+    ```
 
 6. Что напечатает следующая программа? Почему?
   ```python
